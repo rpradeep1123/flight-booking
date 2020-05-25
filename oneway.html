@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/Swiper-Slider.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif;">
@@ -98,10 +98,63 @@
                                     </form>
                                 </div>
                                 <div class="tab-pane" role="tabpanel" id="tab-2">
-                                    <p>Content for tab 2.</p>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
+                                                <div class="form-group"><label>Depart from</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
+                                                <div class="form-group"><label>Going to</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
+                                                <div class="form-group"><label>Departure date</label><input class="form-control form-control-sm" type="date"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
+                                                <div class="form-group"><label>Return date</label><input class="form-control form-control-sm" type="date"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 offset-sm-0 align-self-center">
+                                                <div class="form-group"><label>Travellers | Class</label><input class="form-control form-control-sm" type="text" placeholder="Travellers"></div>
+                                            </div>
+                                            <div class="col-12 col-xl-2 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-start align-items-xl-end">
+                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Submit</button></div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="tab-pane" role="tabpanel" id="tab-3">
-                                    <p>Content for tab 3.</p>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
+                                                <div class="form-group"><label>Depart from</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
+                                                <div class="form-group"><label>Going to</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
+                                                <div class="form-group"><label>Departure date</label><input class="form-control form-control-sm" type="date"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
+                                                <div class="form-group"><label>Depart from</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
+                                                <div class="form-group"><label>Going to</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
+                                                <div class="form-group"><label>Departure date</label><input class="form-control form-control-sm" type="date"></div>
+                                            </div>
+                                            <div class="col-1 d-xl-flex justify-content-xl-center align-items-xl-center"><i class="fa fa-minus-circle fa-2x mt-4 text-danger pointer" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Remove City"></i></div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 offset-sm-0 align-self-center">
+                                                <div class="form-group"><label>Travellers | Class</label><input class="form-control form-control-sm" type="text" placeholder="Travellers"></div>
+                                            </div>
+                                            <div class="col-12 col-xl-2 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-start align-items-xl-end">
+                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Submit</button></div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +162,9 @@
                 </div>
                 <div class="shadow filter">
                     <div class="row">
-                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex align-items-center align-self-center"><i class="fa fa-filter mr-1"></i><a class="text-dark" href="#">Filter</a></div>
+                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex align-items-center align-self-center"><i class="fa fa-filter mr-1"></i>
+                            <p class="text-dark text-medium">Filter</p>
+                        </div>
                         <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
                             <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">No.of Stops</button>
                                 <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
@@ -152,22 +207,22 @@
                                 <div id="slider" class="swiper-container">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/6E.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/I5.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/9W.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/G8.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
                                         </div>
                                         <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
                                             <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
                                         </div>
                                         <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
-                                        </div>
-                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
-                                        </div>
-                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
-                                        </div>
-                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/6E.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
                                         </div>
                                         <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
                                             <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
@@ -187,7 +242,7 @@
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                 <div class="row d-xl-flex justify-content-center align-items-center align-items-xl-center">
                                     <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
-                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub>
+                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/6E.png" width="30"><sub class="mt-3 mb-1">6E755</sub>
                                             <p class="text-dark">INDIGO</p>
                                         </div>
                                     </div>
@@ -261,8 +316,8 @@
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                 <div class="row d-xl-flex justify-content-center align-items-center align-items-xl-center">
                                     <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
-                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub>
-                                            <p class="text-dark">INDIGO</p>
+                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/I5.png" width="30"><sub class="mt-3 mb-1">6E755</sub>
+                                            <p class="text-dark">AIR ASIA</p>
                                         </div>
                                     </div>
                                     <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
@@ -335,8 +390,8 @@
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                 <div class="row d-xl-flex justify-content-center align-items-center align-items-xl-center">
                                     <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
-                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub>
-                                            <p class="text-dark">INDIGO</p>
+                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/G8.png" width="30"><sub class="mt-3 mb-1">6E755</sub>
+                                            <p class="text-dark">GO AIR</p>
                                         </div>
                                     </div>
                                     <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
@@ -408,6 +463,7 @@
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>

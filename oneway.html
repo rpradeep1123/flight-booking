@@ -22,18 +22,18 @@
 <body style="font-family: 'Open Sans', sans-serif;">
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background-image: url(&quot;none&quot;);background-color: rgb(0,0,0);">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="assets/img/logo-mob.png"><div class="sidebar-brand-text mx-3"></div></a>
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand p-3 m-auto" href="#"><img src="assets/img/logo-mob.png" width="60"><div class="sidebar-brand-text mx-3"></div></a>
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="flight_search.html"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
+                <ul class="nav navbar-nav text-light mt-4" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="flight_search.html" title="Dashboard"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="profile.html"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="profile.html" title="Flight"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-compass"></i><span>HOTEL</span></a>
-                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="login.html" title="Hotel"><i class="fas fa-compass"></i><span>HOTEL</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="login.html" title="Holidays"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-file"></i><span>REPORTS</span></a>
@@ -48,7 +48,7 @@
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
                             <li class="nav-item d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center dropdown no-arrow" role="presentation">
-                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
+                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account Balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
                             </li>
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-flex flex-column align-items-xl-end mr-2 text-gray-600 small"><em>Welcome</em><strong>test@dayibpl.com</strong></span><img class="border rounded-circle img-profile" src="assets/img/user-icon.png"></a>
@@ -88,7 +88,7 @@
                                                 <div class="form-group"><label>Travellers | Class</label><input class="form-control form-control-sm" type="text" placeholder="Travellers"></div>
                                             </div>
                                             <div class="col-12 col-xl-2 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-start align-items-xl-end">
-                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Submit</button></div>
+                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Search</button></div>
                                             </div>
                                         </div>
                                     </form>
@@ -176,7 +176,7 @@
                                 <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-right">
                             <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle border border-dark" data-toggle="dropdown" aria-expanded="false" type="button">More Filters</button>
                                 <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                             </div>
@@ -273,10 +273,10 @@
                                 <div class="row d-xl-flex">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                         <div>
-                                            <h5 class="text-dark">1 Stop</h5><sub>via Delhi</sub></div>
+                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <div><sub>Seat (s</sub>
+                                        <div><sub>Seat (s)<br></sub>
                                             <h5 class="text-dark">15</h5>
                                         </div>
                                     </div>
@@ -288,7 +288,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex flex-column justify-content-around align-items-center border-dotted border-right-0 border-top-0 border-bottom-0">
-                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p><button class="btn btn-primary btn-block" type="button">Book</button></div>
+                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1,400</span></p><button class="btn btn-primary btn-block" type="button">Book</button></div>
                         </div>
                         <div>
                             <ul class="list-group list-group-horizontal mt-2 seat">
@@ -347,10 +347,10 @@
                                 <div class="row d-xl-flex">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                         <div>
-                                            <h5 class="text-dark">1 Stop</h5><sub>via Delhi</sub></div>
+                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <div><sub>Seat (s</sub>
+                                        <div><sub>Seat (s)<br></sub>
                                             <h5 class="text-dark">15</h5>
                                         </div>
                                     </div>
@@ -362,7 +362,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex flex-column justify-content-around align-items-center border-dotted border-right-0 border-top-0 border-bottom-0">
-                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p><button class="btn btn-primary btn-block" type="button">Book</button></div>
+                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1,400</span></p><button class="btn btn-primary btn-block" type="button">Book</button></div>
                         </div>
                         <div>
                             <ul class="list-group list-group-horizontal mt-2 seat">
@@ -421,10 +421,10 @@
                                 <div class="row d-xl-flex">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                         <div>
-                                            <h5 class="text-dark">1 Stop</h5><sub>via Delhi</sub></div>
+                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <div><sub>Seat (s</sub>
+                                        <div><sub>Seat (s)<br></sub>
                                             <h5 class="text-dark">15</h5>
                                         </div>
                                     </div>
@@ -436,7 +436,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex flex-column justify-content-around align-items-center border-dotted border-right-0 border-top-0 border-bottom-0">
-                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p><button class="btn btn-primary btn-block" type="button">Book</button></div>
+                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1,400</span></p><button class="btn btn-primary btn-block" type="button">Book</button></div>
                         </div>
                         <div>
                             <ul class="list-group list-group-horizontal mt-2 seat">

@@ -22,18 +22,18 @@
 <body id="page-top">
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background-image: url(&quot;none&quot;);background-color: rgb(0,0,0);">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="assets/img/logo-mob.png"><div class="sidebar-brand-text mx-3"></div></a>
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand p-3 m-auto" href="#"><img src="assets/img/logo-mob.png" width="60"><div class="sidebar-brand-text mx-3"></div></a>
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active font-weight-bold" href="flight_search.html"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
+                <ul class="nav navbar-nav text-light mt-4" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link active font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="flight_search.html" title="Dashboard"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="profile.html"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="profile.html" title="Flight"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-compass"></i><span>HOTEL</span></a>
-                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="login.html" title="Hotel"><i class="fas fa-compass"></i><span>HOTEL</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="login.html" title="Holidays"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-file"></i><span>REPORTS</span></a>
@@ -48,7 +48,7 @@
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
                             <li class="nav-item d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center dropdown no-arrow" role="presentation">
-                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
+                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account Balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
                             </li>
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-flex flex-column align-items-xl-end mr-2 text-gray-600 small"><em>Welcome</em><strong>test@dayibpl.com</strong></span><img class="border rounded-circle img-profile" src="assets/img/user-icon.png"></a>
@@ -63,55 +63,55 @@
             </div>
             </nav>
             <div class="container-fluid p-0">
-                <div class="booking p-1 p-sm-5 p-lg-5 p-xl-5 p-md-5">
-                    <h1 class="text-center" style="font-family: Anton, sans-serif;color: rgb(125,52,79);">Book Domestic and International Flights</h1>
+                <div class="booking px-1 px-sm-5 px-lg-5 px-xl-5 px-md-5">
+                    <h1 class="text-center" style="font-family: Anton, sans-serif;color: rgb(125,52,79);">Book Domestic and International flights</h1>
                     <div class="card" style="/*background-color: rgba(255,255,255,0.6);*/">
                         <div class="card-body">
                             <div>
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-1">One Way</a></li>
+                                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1">One Way</a></li>
                                     <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2">Round Trip</a></li>
-                                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-3">Multicity</a></li>
+                                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-3">Multicity</a></li>
                                 </ul>
                                 <div class="tab-content mt-3">
-                                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                                    <div class="tab-pane active" role="tabpanel" id="tab-1">
                                         <form>
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
-                                                    <div class="form-group"><label>Departure date</label><input class="form-control" type="date"></div>
+                                                    <div class="form-group"><label class="small">Departure date</label><input class="form-control" type="date"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-2 offset-sm-0 align-self-center">
-                                                    <div class="form-group"><label>Travellers | Class</label><input class="form-control" type="text" placeholder="Travellers"></div>
+                                                    <div class="form-group"><label class="small">Travellers | Class</label><input class="form-control" type="text" placeholder="Travellers"></div>
                                                 </div>
                                             </div>
                                         </form>
                                         <div class="row d-xl-flex justify-content-xl-center">
-                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><button class="btn btn-primary btn-block font-weight-bold" type="button">Submit</button></div>
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><button class="btn btn-primary btn-block font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Submit">Submit</button></div>
                                         </div>
                                     </div>
                                     <div class="tab-pane" role="tabpanel" id="tab-2">
                                         <form>
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
-                                                    <div class="form-group"><label>Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
-                                                    <div class="form-group"><label>Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
-                                                    <div class="form-group"><label>Departure date</label><input class="form-control" type="date"></div>
+                                                    <div class="form-group"><label class="small">Departure date</label><input class="form-control" type="date"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
-                                                    <div class="form-group"><label>Return date</label><input class="form-control" type="date"></div>
+                                                    <div class="form-group"><label class="small">Return date</label><input class="form-control" type="date"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-2 offset-sm-0 align-self-center">
-                                                    <div class="form-group"><label>Travellers | Class</label><input class="form-control" type="text" placeholder="Travellers"></div>
+                                                    <div class="form-group"><label class="small">Travellers | Class</label><input class="form-control" type="text" placeholder="Travellers"></div>
                                                 </div>
                                             </div>
                                         </form>
@@ -119,46 +119,46 @@
                                             <div class="col-12 col-sm-6 col-md-4 col-lg-3"><button class="btn btn-primary btn-block font-weight-bold" type="button">Submit</button></div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane active" role="tabpanel" id="tab-3">
+                                    <div class="tab-pane" role="tabpanel" id="tab-3">
                                         <form>
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
-                                                    <div class="form-group"><label>Departure date</label><input class="form-control" type="date"></div>
+                                                    <div class="form-group"><label class="small">Departure date</label><input class="form-control" type="date"></div>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
-                                                    <div class="form-group"><label>Departure date</label><input class="form-control" type="date"></div>
+                                                    <div class="form-group"><label class="small">Departure date</label><input class="form-control" type="date"></div>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Depart from</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
+                                                    <div class="form-group"><label class="small">Going to</label><input class="form-control" type="text" placeholder="Any worldwide city or airport"></div>
                                                 </div>
                                                 <div class="col-11 col-sm-11 col-md-6 col-xl-3 align-self-center">
-                                                    <div class="form-group"><label>Departure date</label><input class="form-control" type="date"></div>
+                                                    <div class="form-group"><label class="small">Departure date</label><input class="form-control" type="date"></div>
                                                 </div>
                                                 <div class="col-1 col-lg-1 col-xl-1 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center text-danger mt-3 pointer"
                                                     title="Remove City"><i class="fa fa-minus-circle fa-2x" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Remove City"></i></div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-xl-4 align-self-center">
-                                                    <div class="form-group"><label>Travellers | Class</label><input class="form-control" type="text" placeholder="Travellers"></div>
+                                                    <div class="form-group"><label class="small">Travellers | Class</label><input class="form-control" type="text" placeholder="Travellers"></div>
                                                 </div>
                                             </div>
                                         </form>

@@ -22,18 +22,18 @@
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background-image: url(&quot;none&quot;);background-color: rgb(0,0,0);">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="assets/img/logo-mob.png"><div class="sidebar-brand-text mx-3"></div></a>
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand p-3 m-auto" href="#"><img src="assets/img/logo-mob.png" width="60"><div class="sidebar-brand-text mx-3"></div></a>
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="flight_search.html"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
+                <ul class="nav navbar-nav text-light mt-4" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="flight_search.html" title="Dashboard"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="profile.html"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="profile.html" title="Flight"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-compass"></i><span>HOTEL</span></a>
-                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="login.html" title="Hotel"><i class="fas fa-compass"></i><span>HOTEL</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" href="login.html" title="Holidays"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-file"></i><span>REPORTS</span></a>
@@ -48,7 +48,7 @@
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
                             <li class="nav-item d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center dropdown no-arrow" role="presentation">
-                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
+                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account Balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
                             </li>
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-flex flex-column align-items-xl-end mr-2 text-gray-600 small"><em>Welcome</em><strong>test@dayibpl.com</strong></span><img class="border rounded-circle img-profile" src="assets/img/user-icon.png"></a>
@@ -310,9 +310,10 @@
                             <div class="card-body border">
                                 <div class="row">
                                     <div class="col-lg-9 col-xl-9">
-                                        <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-2"><label class="form-check-label custom-control-label" for="formCheck-2">Yes add travel protection to protect my trip (Rs. 499 per traveller<span class="d-block additional-info">6000+ travellers on pinki protect their trip daily. Learn more</span></label></div>
+                                        <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-2"><label class="form-check-label custom-control-label" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" for="formCheck-2"
+                                                title="Add Travel Protection">Yes add travel protection to protect my trip (Rs. 499 per traveller<span class="d-block additional-info">6000+ travellers on pinki protect their trip daily. Learn more</span></label></div>
                                     </div>
-                                    <div class="col-lg-3 col-xl-3"><button class="btn btn-primary btn-sm" type="button">Change Hotel</button></div>
+                                    <div class="col-lg-3 col-xl-3"><button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Change Hotel">Change Hotel</button></div>
                                 </div><label class="text-dark">Related Hotels:</label>
                                 <div class="row justify-content-center align-items-stretch">
                                     <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 d-xl-flex">
@@ -353,79 +354,85 @@
                         <div class="card">
                             <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Transfer<span class="sub-text">(Recommended</span></h4>
                             <div class="card-body border">
-                                <div class="form-check form-check-inline custom-radio d-inline-flex"><input class="form-check-input custom-control-input" type="radio" id="formCheck-3"><label class="form-check-label custom-control-label" for="formCheck-3">Private Transfer</label></div>
-                                <div class="form-check form-check-inline custom-radio d-inline-flex"><input class="form-check-input custom-control-input" type="radio" id="formCheck-4"><label class="form-check-label custom-control-label" for="formCheck-4">S/C</label></div>
-                                <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-6"><label class="form-check-label custom-control-label text-dark font-weight-bold" for="formCheck-6">Airport Transfer<span class="text-danger font-weight-bold">&nbsp;(&nbsp;<i class="fa fa-rupee"></i>&nbsp;500 )<br></span></label></div>
-                                <div
-                                    class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-5"><label class="form-check-label custom-control-label text-dark font-weight-bold" for="formCheck-5">LocalTransfer<span class="text-danger font-weight-bold">&nbsp;(&nbsp;<i class="fa fa-rupee"></i>&nbsp;500 )<br></span></label></div>
+                                <div class="form-check form-check-inline custom-radio d-inline-flex"><input class="form-check-input custom-control-input" type="radio" id="formCheck-3"><label class="form-check-label custom-control-label" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" for="formCheck-3"
+                                        title="Private Transfer">Private Transfer</label></div>
+                                <div class="form-check form-check-inline custom-radio d-inline-flex"><input class="form-check-input custom-control-input" type="radio" id="formCheck-4"><label class="form-check-label custom-control-label" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" for="formCheck-4"
+                                        title="S/C">S/C</label></div>
+                                <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-6"><label class="form-check-label custom-control-label text-dark font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom"
+                                        for="formCheck-6" title="Airport">Airport Transfer<span class="text-danger font-weight-bold">&nbsp;(&nbsp;<i class="fa fa-rupee"></i>&nbsp;500 )<br></span></label></div>
+                                <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-5"><label class="form-check-label custom-control-label text-dark font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom"
+                                        for="formCheck-5" title="Local">LocalTransfer<span class="text-danger font-weight-bold">&nbsp;(&nbsp;<i class="fa fa-rupee"></i>&nbsp;500 )<br></span></label></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Service Requests<span class="sub-text">(Optional</span></h4>
+                            <div class="card-body border"><button class="btn btn-secondary mr-1 my-1" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Add Meals"><i class="fa fa-plus"></i>&nbsp;Add Meals</button><button class="btn btn-secondary mr-1 my-1"
+                                    data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Select Seats"><i class="fa fa-plus"></i>&nbsp;Select Seats</button><button class="btn btn-secondary mr-1 my-1" data-toggle="tooltip"
+                                    data-bs-tooltip="" data-placement="bottom" type="button" title="Select Others"><i class="fa fa-plus"></i>&nbsp;Select Others</button></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body border mt-2">
+                                <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-7"><label class="form-check-label custom-control-label font-weight-bold text-dark" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom"
+                                        for="formCheck-7" title="GST Number">GST Number for business travel (optional<small class="d-block">To claim credit ofGST charged by airlines/MMT, please enter your company's GST number</small></label></div>
+                            </div>
+                        </div>
+                        <div class="form-check custom-control custom-checkbox pt-2"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-8"><label class="form-check-label custom-control-label" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" for="formCheck-8" title="I would like a quiret room">I would like a quiet room</label></div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0 pt-5">
+                                <h6 class="card-title text-gray-600">Fare Details</h6>
+                                <div class="d-flex d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border">
+                                    <p class="text-medium text-dark">Adult <i class="fa fa-close"></i>1</p>
+                                    <p class="text-medium"><i class="fa fa-rupee"></i>25,000</p>
+                                </div>
+                                <div class="d-flex d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border mt-2">
+                                    <p class="text-medium text-dark">Fee &amp; Surharges<i class="fa fa-chevron-down fa-sm"></i></p>
+                                    <p class="text-medium"><i class="fa fa-rupee"></i>25,000</p>
+                                </div>
+                                <div class="justify-content-between align-items-xl-center p-2 bg-info border mt-2">
+                                    <div class="d-flex d-xl-flex justify-content-between align-items-xl-center">
+                                        <p class="text-medium text-dark">You Pay:</p>
+                                        <p class="text-large text-danger"><i class="fa fa-rupee"></i>25,000</p>
+                                    </div>
+                                    <div class="d-flex d-xl-flex justify-content-between align-items-xl-center">
+                                        <p class="text-dark">Earn eCash</p>
+                                        <p class="small"><i class="fa fa-rupee"></i>25,000</p>
+                                    </div>
+                                </div>
+                                <div class="border mt-2">
+                                    <div class="d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border">
+                                        <p class="text-medium text-dark">OFFERS</p>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0">
+                                            <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-9"><label class="form-check-label custom-control-label border-dotted rounded-20 p-1 small-text font-weight-bold border-" data-toggle="tooltip"
+                                                    data-bs-tooltip="" for="formCheck-9" title="CITYSUPER">CITYSUPER</label></div>
+                                            <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li class="list-group-item mt-2 border-0">
+                                            <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-10"><label class="form-check-label custom-control-label border-dotted rounded-20 p-1 small-text font-weight-bold" data-toggle="tooltip"
+                                                    data-bs-tooltip="" for="formCheck-10" title="FLYNEW">FLYNEW</label></div>
+                                            <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li class="list-group-item mt-2 border-0">
+                                            <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-11"><label class="form-check-label custom-control-label border-dotted rounded-20 p-1 small-text font-weight-bold" data-toggle="tooltip"
+                                                    data-bs-tooltip="" for="formCheck-11" title="INTLWORLD">INTLWORLD</label></div>
+                                            <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Service Requests<span class="sub-text">(Optional</span></h4>
-                        <div class="card-body border"><button class="btn btn-secondary mr-1 my-1" type="button"><i class="fa fa-plus"></i>&nbsp;Add Meals</button><button class="btn btn-secondary mr-1 my-1" type="button"><i class="fa fa-plus"></i>&nbsp;Select Seats</button>
-                            <button
-                                class="btn btn-secondary mr-1 my-1" type="button"><i class="fa fa-plus"></i>&nbsp;Select Others</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body border mt-2">
-                            <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-7"><label class="form-check-label custom-control-label font-weight-bold text-dark" for="formCheck-7">GST Number for business travel (optional<small class="d-block">To claim credit ofGST charged by airlines/MMT, please enter your company's GST number</small></label></div>
-                        </div>
-                    </div>
-                    <div class="form-check custom-control custom-checkbox pt-2"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-8"><label class="form-check-label custom-control-label" for="formCheck-8">I would like a quiet room</label></div>
                 </div>
-                <div class="col-lg-3 col-xl-3">
-                    <div class="card">
-                        <div class="card-body p-0 pt-5">
-                            <h6 class="card-title text-gray-600">Fare Details</h6>
-                            <div class="d-flex d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border">
-                                <p class="text-medium text-dark">Adult <i class="fa fa-close"></i>1</p>
-                                <p class="text-medium"><i class="fa fa-rupee"></i>25,000</p>
-                            </div>
-                            <div class="d-flex d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border mt-2">
-                                <p class="text-medium text-dark">Fee &amp; Surharges<i class="fa fa-chevron-down fa-sm"></i></p>
-                                <p class="text-medium"><i class="fa fa-rupee"></i>25,000</p>
-                            </div>
-                            <div class="justify-content-between align-items-xl-center p-2 bg-info border mt-2">
-                                <div class="d-flex d-xl-flex justify-content-between align-items-xl-center">
-                                    <p class="text-medium text-dark">You Pay:</p>
-                                    <p class="text-large text-danger"><i class="fa fa-rupee"></i>25,000</p>
-                                </div>
-                                <div class="d-flex d-xl-flex justify-content-between align-items-xl-center">
-                                    <p class="text-dark">Earn eCash</p>
-                                    <p class="small"><i class="fa fa-rupee"></i>25,000</p>
-                                </div>
-                            </div>
-                            <div class="border mt-2">
-                                <div class="d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border">
-                                    <p class="text-medium text-dark">OFFERS</p>
-                                </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item border-0">
-                                        <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-9"><label class="form-check-label custom-control-label border-dotted rounded-20 p-1 small-text font-weight-bold border-" for="formCheck-9">CITYSUPER</label></div>
-                                        <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
-                                        <div class="dropdown-divider"></div>
-                                    </li>
-                                    <li class="list-group-item mt-2 border-0">
-                                        <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-10"><label class="form-check-label custom-control-label border-dotted rounded-20 p-1 small-text font-weight-bold" for="formCheck-10">FLYNEW</label></div>
-                                        <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
-                                        <div class="dropdown-divider"></div>
-                                    </li>
-                                    <li class="list-group-item mt-2 border-0">
-                                        <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-11"><label class="form-check-label custom-control-label border-dotted rounded-20 p-1 small-text font-weight-bold" for="formCheck-11">INTLWORLD</label></div>
-                                        <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row">
+                    <div class="col-lg-9 col-xl-9"><button class="btn btn-primary float-right" data-toggle="tooltip" data-bs-tooltip="" type="button" title="Continue to Payment">Continue to Payment</button></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9 col-xl-9"><button class="btn btn-primary float-right" type="button">Continue to Payment</button></div>
             </div>
         </div>
-    </div>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

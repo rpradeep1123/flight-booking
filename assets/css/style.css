@@ -463,3 +463,16 @@ h6 {
   padding: 0 1rem;
 }
 
+.topbar {
+  height: 3rem;
+}
+
+.sidebar-dark .nav-item .nav-link i {
+  color: white;
+}
+
+.booking {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+

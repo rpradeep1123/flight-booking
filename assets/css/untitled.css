@@ -1,0 +1,396 @@
+.btn-para {
+  background-color: rgb(26,133,209);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-para span {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.booking {
+  /*padding: 5rem;*/
+  background-image: linear-gradient(180deg, #ca98a4, #fbdab9);
+}
+
+.booking h2 {
+  color: #7d344f;
+}
+
+.booking .card {
+  background-color: rgba(255,255,255,0.75);
+}
+
+.nav-item .dropdown-divider {
+  width: 80%;
+  margin: auto;
+}
+
+.nav-item .nav-link .fas {
+}
+
+.sidebar .nav-item .nav-link i {
+  font-size: 1.5rem;
+}
+
+.h5, h5 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: .75rem;
+}
+
+.normal-price {
+  text-decoration: line-through;
+}
+
+.offer-price {
+  color: rgb(235,0,0);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.status {
+  color: rgb(10,205,10);
+  font-size: 0.65rem;
+}
+
+.dropdown-divider.duration {
+  border-top: 1px solid rgb(208,206,206);
+  width: 80%;
+}
+
+.list-group-horizontal .list-group-item {
+  border-radius: 2px 2px 2px 2px;
+}
+
+.list-group-horizontal .list-group-item {
+  border: none;
+  background-color: rgb(232,232,232);
+  margin-right: 0.25rem;
+  padding: 0.2rem;
+}
+
+.list-group-horizontal .list-group-item:first-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.list-group-horizontal .list-group-item:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.list-group-horizontal .list-group-item {
+  padding: .2rem;
+  font-size: 0.75rem;
+}
+
+.flight-details .card-footer {
+  background-color: #fffada;
+  padding: .5rem 0.75rem;
+}
+
+.card.flight-details {
+  border: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+sub {
+  bottom: 0;
+  color: black;
+}
+
+.fa.fa-clock-o {
+  margin-right: 0.25rem;
+}
+
+.border-dotted {
+  border-style: dashed;
+  border-width: 1px;
+}
+
+.card.search {
+  background-color: #3a4c8c;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #0479fd;
+}
+
+.nav-pills .nav-link {
+  padding: 0.3rem 1rem;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.search label {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.btn-primary {
+  background-color: #0479fd;
+}
+
+.filter {
+  padding: 0.25rem;
+  background-color: white;
+}
+
+#wrapper #content-wrapper #content {
+}
+
+#wrapper #content-wrapper {
+  background-color: white;
+}
+
+.btn.btn-primary.dropdown-toggle {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.search .card-body {
+  padding: 0.5rem;
+}
+
+.dropdown.sort-by {
+  border: 1px solid rgb(195,195,195);
+}
+
+.search .form-group {
+  margin-bottom: 0;
+}
+
+.seat .list-group-item {
+  font-weight: bold;
+}
+
+.seat .list-group-item {
+  color: #5a5c69;
+}
+
+.filter {
+  font-size: 1rem;
+}
+
+h6 {
+  margin-bottom: 0;
+  color: black;
+}
+
+.booking .nav-pills .nav-link {
+  color: black;
+}
+
+.nav-pills .nav-link.active {
+  color: white;
+}
+
+.card {
+  border-radius: 0;
+  border: 0;
+}
+
+.sort-by .list-group-item {
+  background-color: transparent;
+}
+
+.card.multi-city-selection {
+  background-color: #eef5fd;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card.flight-details.small .card-body {
+  padding: 1rem 0.1rem;
+}
+
+.flight-details.small .offer-price {
+  font-size: 1rem;
+}
+
+.flight-details.small h6 {
+  font-size: 0.8rem;
+}
+
+.flight-details.small .status {
+  font-size: 0.5rem;
+}
+
+.fa.fa-circle.small {
+  font-size: 0.2rem;
+  color: rgb(215,212,212);
+}
+
+.normal-text {
+  font-size: 1rem;
+}
+
+.dot-divider {
+  font-size: 0.2rem;
+  color: rgb(204,204,204);
+}
+
+.small-text {
+  font-size: 0.65rem;
+}
+
+.offer-price-sm {
+  font-size: 1rem;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: -0.5em 0 0 0.5em;
+  vertical-align: middle;
+  content: "";
+  border: 0.3em solid;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotateZ(45deg);
+  float: right;
+  margin-top: 0.5em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-right, .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+.swiper-container .airlines-swiper {
+  width: auto;
+  height: 50px;
+}
+
+#slider .swiper-slide {
+  width: 200px;
+}
+
+#slider .swiper-slide {
+  border-right: 1px dashed;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: none;
+}
+
+#slider .swiper-slide:last-child {
+  border: none;
+}
+
+.list-group.list-group-horizontal .no-background {
+  background-color: transparent;
+}
+
+.list-group.list-group-horizontal.list-group-1 {
+  background-color: #eef0ff;
+  padding: 0.1rem;
+}
+
+.ticket-header {
+  color: rgb(23,136,216);
+  padding: 1rem 0;
+}
+
+.arrow-div sub {
+  font-size: .75rem;
+  color: grey;
+}
+
+.vertical-text {
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+  float: left;
+  background-color: rgb(213,213,213);
+  padding: 0.3rem;
+}
+
+.confirmation-ticket p {
+  font-size: 1rem;
+}
+
+.confirmation-ticket .status {
+  font-size: 0.75rem;
+}
+
+.confirmation-ticket .change {
+  font-size: 0.5rem;
+}
+
+.ticket-header .sub-text {
+  color: rgb(115,115,115);
+  font-size: 0.75rem;
+  border-left: 1px solid rgb(115,115,115);
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.additional-info {
+  color: orange;
+}
+
+.fa-avatar {
+  background-color: rgb(218,218,218);
+  padding: 1rem;
+}
+
+.thumbnail h6 {
+  font-size: 1rem;
+}
+
+.thumbnail .badge {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.text-medium {
+  font-size: 1rem;
+}
+
+.bg-info {
+  background-color: #eef0ff !important;
+}
+
+.text-large {
+  font-size: 1.5rem;
+}
+
+.confirmation-ticket .row {
+  padding: 1rem;
+}
+

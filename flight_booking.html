@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background-image: url(&quot;none&quot;);background-color: rgb(0,0,0);">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="flight_search.html"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="profile.html"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-compass"></i><span>HOTEL</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-file"></i><span>REPORTS</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-cog"></i><span>SETTINGS</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0 d-none" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center dropdown no-arrow" role="presentation">
+                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
+                            </li>
+                            <li class="nav-item dropdown no-arrow" role="presentation">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-flex flex-column align-items-xl-end mr-2 text-gray-600 small"><em>Welcome</em><strong>test@dayibpl.com</strong></span><img class="border rounded-circle img-profile" src="assets/img/user-icon.png"></a>
+                                    <div
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <a
+                                            class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+            <div class="container-fluid confirmation-ticket p-0">
+                <div class="d-xl-flex justify-content-xl-end bg-secondary px-2">
+                    <p class="text-white">Website Feedback</p>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-9 col-xl-9">
+                        <div class="card confirmation-ticket">
+                            <h4 class="ticket-header"><i class="fa fa-file-text"></i>&nbsp;Review Your Booking</h4>
+                            <div class="card-body px-0 border">
+                                <div>
+                                    <div class="row text-center d-flex p-3">
+                                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="50"><sub class="mt-3 mb-1">6E755</sub>
+                                                <p class="text-dark">INDIGO</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                                            <div>
+                                                <p></p>
+                                                <p>DEL</p>
+                                                <h5 class="text-dark font-weight-bold">21:55</h5>
+                                                <p>Wed, 15 Jan 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center">
+                                            <div class="text-center arrow-div">
+                                                <ul class="list-group list-group-horizontal d-xl-flex justify-content-xl-center">
+                                                    <li class="list-group-item no-background border-right">
+                                                        <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                    </li>
+                                                    <li class="list-group-item no-background border-right">
+                                                        <p><sub>Free Meals</sub></p>
+                                                    </li>
+                                                    <li class="list-group-item no-background">
+                                                        <p><sub>Via Delhi</sub></p>
+                                                    </li>
+                                                </ul>
+                                                <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                    <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                <p class="status"><sub class="border-right mr-1 pr-1">15 kgs</sub><strong>REFUNDABLE</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                                            <div>
+                                                <p></p>
+                                                <p>DEL</p>
+                                                <h5 class="text-dark font-weight-bold">21:55</h5>
+                                                <p>Wed, 15 Jan 2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div>
+                                    <div class="row text-center d-flex p-3">
+                                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="50"><sub class="mt-3 mb-1">6E755</sub>
+                                                <p class="text-dark">INDIGO</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                                            <div>
+                                                <p></p>
+                                                <p>DEL</p>
+                                                <h5 class="text-dark font-weight-bold">21:55</h5>
+                                                <p>Wed, 15 Jan 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center">
+                                            <div class="text-center arrow-div">
+                                                <ul class="list-group list-group-horizontal d-xl-flex justify-content-xl-center">
+                                                    <li class="list-group-item no-background border-right">
+                                                        <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                    </li>
+                                                    <li class="list-group-item no-background border-right">
+                                                        <p><sub>Free Meals</sub></p>
+                                                    </li>
+                                                    <li class="list-group-item no-background">
+                                                        <p><sub>Via Delhi</sub></p>
+                                                    </li>
+                                                </ul>
+                                                <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                    <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                <p class="status"><sub class="border-right mr-1 pr-1">15 kgs</sub><strong>REFUNDABLE</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                                            <div>
+                                                <p></p>
+                                                <p>DEL</p>
+                                                <h5 class="text-dark font-weight-bold">21:55</h5>
+                                                <p>Wed, 15 Jan 2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-1 change" style="background-color: #e4e3e3;">
+                                        <p class="text-center text-dark">Change planes at Ranchi(IXR , Connecting Time: 04h 10m</p>
+                                    </div>
+                                    <div class="row text-center d-flex p-3">
+                                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="50"><sub class="mt-3 mb-1">6E755</sub>
+                                                <p class="text-dark">INDIGO</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                                            <div>
+                                                <p></p>
+                                                <p>DEL</p>
+                                                <h5 class="text-dark font-weight-bold">21:55</h5>
+                                                <p>Wed, 15 Jan 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center">
+                                            <div class="text-center arrow-div">
+                                                <ul class="list-group list-group-horizontal d-xl-flex justify-content-xl-center">
+                                                    <li class="list-group-item no-background border-right">
+                                                        <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                    </li>
+                                                    <li class="list-group-item no-background border-right">
+                                                        <p><sub>Free Meals</sub></p>
+                                                    </li>
+                                                    <li class="list-group-item no-background">
+                                                        <p><sub>Via Delhi</sub></p>
+                                                    </li>
+                                                </ul>
+                                                <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                    <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                <p class="status"><sub class="border-right mr-1 pr-1">15 kgs</sub><strong>REFUNDABLE</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                                            <div>
+                                                <p></p>
+                                                <p>DEL</p>
+                                                <h5 class="text-dark font-weight-bold">21:55</h5>
+                                                <p>Wed, 15 Jan 2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-user-o"></i>&nbsp;Enter Traveller Details<span class="sub-text">Sign in to book faster</span></h4>
+                            <div class="card-body border">
+                                <h6>Contact Details</h6>
+                                <div class="dropdown-divider"></div>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group"><label class="text-dark">Email Address</label><input class="form-control form-control-sm" type="text" placeholder="Enter Email"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label class="text-dark">Mobile No</label><input class="form-control form-control-sm" type="text" placeholder="Enter Mobile No"></div>
+                                        </div>
+                                    </div><sub>Your booking details will be sent to this email address and mobile number</sub></form>
+                                <h6>Adult 1</h6>
+                                <div class="dropdown-divider"></div>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group"><label class="text-dark">Title</label><input class="form-control form-control-sm" type="text" placeholder="Title"></div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group"><label class="text-dark">First Name</label><input class="form-control form-control-sm" type="text" placeholder="First Name"></div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group"><label class="text-dark">Last Name</label><input class="form-control form-control-sm" type="text" placeholder="Last Name"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label class="text-dark">DOB</label><input class="form-control form-control-sm" type="text" placeholder="DOB"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle text-gray-600" data-toggle="dropdown" aria-expanded="false" type="button">Optional (Passport)</button>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Travel Protection<span class="sub-text">(Recommended</span></h4>
+                            <div class="card-body border">
+                                <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Yes add travel protection to protect my trip (Rs. 499 per traveller<span class="d-block additional-info">6000+ travellers on pinki protect their trip daily. Learn more</span></label></div>
+                                <label
+                                    class="text-dark">Cover includes:</label>
+                                    <div class="row justify-content-center align-items-stretch">
+                                        <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-xl-flex">
+                                            <div class="card d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center thumbnail"><i class="fa fa-shopping-bag fa-2x rounded-circle fa-avatar" style="/*background-color: grey;*/"></i><span class="badge badge-success rounded-circle"><i class="fa fa-check"></i></span>
+                                                <div class="card-body text-center">
+                                                    <h6 class="card-title">Lifestyle &amp; Travel</h6>
+                                                    <p class="card-text">Assistance</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-xl-flex">
+                                            <div class="card d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center thumbnail"><i class="fa fa-id-card fa-2x rounded-circle fa-avatar" style="/*background-color: grey;*/"></i><span class="badge badge-success rounded-circle"><i class="fa fa-check"></i></span>
+                                                <div class="card-body text-center">
+                                                    <h6 class="card-title">Loss of Passport</h6>
+                                                    <p class="card-text">Claim upto $250</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-xl-flex">
+                                            <div class="card d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center thumbnail"><i class="fa fa-plane fa-2x rounded-circle fa-avatar" style="/*background-color: grey;*/"></i><span class="badge badge-success rounded-circle"><i class="fa fa-check"></i></span>
+                                                <div class="card-body text-center">
+                                                    <h6 class="card-title">Trip Cancellation</h6>
+                                                    <p class="card-text">Claim upto $500<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-xl-flex">
+                                            <div class="card d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center thumbnail"><i class="fa fa-suitcase fa-2x rounded-circle fa-avatar" style="/*background-color: grey;*/"></i><span class="badge badge-success rounded-circle"><i class="fa fa-check"></i></span>
+                                                <div class="card-body text-center">
+                                                    <h6 class="card-title">Loss of Baggage</h6>
+                                                    <p class="card-text">Claim upto $500<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-xl-flex">
+                                            <div class="card d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center thumbnail"><i class="fa fa-ambulance fa-2x rounded-circle fa-avatar" style="/*background-color: grey;*/"></i><span class="badge badge-success rounded-circle"><i class="fa fa-check"></i></span>
+                                                <div class="card-body text-center">
+                                                    <h6 class="card-title">Medical Emergency</h6>
+                                                    <p class="card-text">Claim upto $2500<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Hotels<span class="sub-text">(Recommended</span></h4>
+                            <div class="card-body border">
+                                <div class="row">
+                                    <div class="col-lg-9 col-xl-9">
+                                        <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-2"><label class="form-check-label custom-control-label" for="formCheck-2">Yes add travel protection to protect my trip (Rs. 499 per traveller<span class="d-block additional-info">6000+ travellers on pinki protect their trip daily. Learn more</span></label></div>
+                                    </div>
+                                    <div class="col-lg-3 col-xl-3"><button class="btn btn-primary btn-sm" type="button">Change Hotel</button></div>
+                                </div><label class="text-dark">Related Hotels:</label>
+                                <div class="row justify-content-center align-items-stretch">
+                                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 d-xl-flex">
+                                        <div class="media"><img class="mr-3" src="assets/img/SG.png" width="60" height="50">
+                                            <div class="media-body">
+                                                <h6 class="font-weight-bold">Hotel Name</h6>
+                                                <p><i class="fa fa-rupee"></i>2,500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 d-xl-flex">
+                                        <div class="media"><img class="mr-3" src="assets/img/SG.png" width="60" height="50">
+                                            <div class="media-body">
+                                                <h6 class="font-weight-bold">Hotel Name</h6>
+                                                <p><i class="fa fa-rupee"></i>2,500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 d-xl-flex">
+                                        <div class="media"><img class="mr-3" src="assets/img/SG.png" width="60" height="50">
+                                            <div class="media-body">
+                                                <h6 class="font-weight-bold">Hotel Name</h6>
+                                                <p><i class="fa fa-rupee"></i>2,500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 d-xl-flex">
+                                        <div class="media"><img class="mr-3" src="assets/img/SG.png" width="60" height="50">
+                                            <div class="media-body">
+                                                <h6 class="font-weight-bold">Hotel Name</h6>
+                                                <p><i class="fa fa-rupee"></i>2,500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Transfer<span class="sub-text">(Recommended</span></h4>
+                            <div class="card-body border">
+                                <div class="form-check form-check-inline custom-radio d-inline-flex"><input class="form-check-input custom-control-input" type="radio" id="formCheck-3"><label class="form-check-label custom-control-label" for="formCheck-3">Private Transfer</label></div>
+                                <div class="form-check form-check-inline custom-radio d-inline-flex"><input class="form-check-input custom-control-input" type="radio" id="formCheck-4"><label class="form-check-label custom-control-label" for="formCheck-4">S/C</label></div>
+                                <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-6"><label class="form-check-label custom-control-label text-dark font-weight-bold" for="formCheck-6">Airport Transfer<span class="text-danger font-weight-bold">&nbsp;(&nbsp;<i class="fa fa-rupee"></i>&nbsp;500 )<br></span></label></div>
+                                <div
+                                    class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-5"><label class="form-check-label custom-control-label text-dark font-weight-bold" for="formCheck-5">LocalTransfer<span class="text-danger font-weight-bold">&nbsp;(&nbsp;<i class="fa fa-rupee"></i>&nbsp;500 )<br></span></label></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="d-xl-flex align-items-xl-center ticket-header"><i class="fa fa-plus"></i>&nbsp;Service Requests<span class="sub-text">(Optional</span></h4>
+                        <div class="card-body border"><button class="btn btn-secondary mr-1 my-1" type="button"><i class="fa fa-plus"></i>&nbsp;Add Meals</button><button class="btn btn-secondary mr-1 my-1" type="button"><i class="fa fa-plus"></i>&nbsp;Select Seats</button>
+                            <button
+                                class="btn btn-secondary mr-1 my-1" type="button"><i class="fa fa-plus"></i>&nbsp;Select Others</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body border mt-2">
+                            <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-7"><label class="form-check-label custom-control-label font-weight-bold text-dark" for="formCheck-7">GST Number for business travel (optional<small class="d-block">To claim credit ofGST charged by airlines/MMT, please enter your company's GST number</small></label></div>
+                        </div>
+                    </div>
+                    <div class="form-check custom-control custom-checkbox pt-2"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-8"><label class="form-check-label custom-control-label" for="formCheck-8">I would like a quiet room</label></div>
+                </div>
+                <div class="col-lg-3 col-xl-3">
+                    <div class="card">
+                        <div class="card-body p-0 pt-5">
+                            <h6 class="card-title text-gray-600">Fare Details</h6>
+                            <div class="d-flex d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border">
+                                <p class="text-medium text-dark">Adult <i class="fa fa-close"></i>1</p>
+                                <p class="text-medium"><i class="fa fa-rupee"></i>25,000</p>
+                            </div>
+                            <div class="d-flex d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border mt-2">
+                                <p class="text-medium text-dark">Fee &amp; Surharges<i class="fa fa-chevron-down fa-sm"></i></p>
+                                <p class="text-medium"><i class="fa fa-rupee"></i>25,000</p>
+                            </div>
+                            <div class="justify-content-between align-items-xl-center p-2 bg-info border mt-2">
+                                <div class="d-flex d-xl-flex justify-content-between align-items-xl-center">
+                                    <p class="text-medium text-dark">You Pay:</p>
+                                    <p class="text-large text-danger"><i class="fa fa-rupee"></i>25,000</p>
+                                </div>
+                                <div class="d-flex d-xl-flex justify-content-between align-items-xl-center">
+                                    <p class="text-dark">Earn eCash</p>
+                                    <p><i class="fa fa-rupee"></i>25,000</p>
+                                </div>
+                            </div>
+                            <div class="border mt-2">
+                                <div class="d-xl-flex justify-content-between align-items-xl-center p-2 bg-info border">
+                                    <p class="text-medium text-dark">OFFERS</p>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item border-0">
+                                        <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-9"><label class="form-check-label custom-control-label border-dotted rounded p-1 small-text font-weight-bold" for="formCheck-9">CITYSUPER</label></div>
+                                        <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li class="list-group-item mt-2 border-0">
+                                        <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-10"><label class="form-check-label custom-control-label border-dotted rounded p-1 small-text font-weight-bold" for="formCheck-10">FLYNEW</label></div>
+                                        <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li class="list-group-item mt-2 border-0">
+                                        <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" id="formCheck-11"><label class="form-check-label custom-control-label border-dotted rounded p-1 small-text font-weight-bold" for="formCheck-11">INTLWORLD</label></div>
+                                        <p>Use CITYSUPER to get INR 2332 cashback to card. Valid on CITI debit &amp; credit cards. Hurry offer valid for today. Know more</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-xl-9"><button class="btn btn-primary float-right" type="button">Continue to Payment</button></div>
+            </div>
+        </div>
+    </div>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="assets/js/Swiper-Slider.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

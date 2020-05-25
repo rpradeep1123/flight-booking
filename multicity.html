@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background-image: url(&quot;none&quot;);background-color: rgb(0,0,0);">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="flight_search.html"><i class="fas fa-tachometer-alt"></i><span>DASHBOARD</span></a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="profile.html"><i class="fas fa-plane-departure"></i><span>FLIGHT</span></a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-compass"></i><span>HOTEL</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="login.html"><i class="fas fa-align-justify"></i><span>HOLIDAYS</span></a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-file"></i><span>REPORTS</span></a>
+                        <div class="dropdown-divider"></div><a class="nav-link font-weight-bold" href="register.html"><i class="fas fa-cog"></i><span>SETTINGS</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0 d-none" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center dropdown no-arrow" role="presentation">
+                                <p class="d-flex d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center btn-para">Account balance<span class="d-flex align-items-center">125,00,000</span>&nbsp;</p>
+                            </li>
+                            <li class="nav-item dropdown no-arrow" role="presentation">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-flex flex-column align-items-xl-end mr-2 text-gray-600 small"><em>Welcome</em><strong>test@dayibpl.com</strong></span><img class="border rounded-circle img-profile" src="assets/img/user-icon.png"></a>
+                                    <div
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <a
+                                            class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+            <div class="container-fluid p-0">
+                <div class="card search">
+                    <div class="card-body">
+                        <div>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1">One way</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2">Round Trip</a></li>
+                                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-3">Multicity</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
+                                                <div class="form-group"><label>Depart from</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-3 align-self-center">
+                                                <div class="form-group"><label>Going to</label><input class="form-control form-control-sm" type="text" placeholder="Any worldwide city or airport"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 align-self-center">
+                                                <div class="form-group"><label>Departure date</label><input class="form-control form-control-sm" type="date"></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-xl-2 offset-sm-0 align-self-center">
+                                                <div class="form-group"><label>Travellers | Class</label><input class="form-control form-control-sm" type="text" placeholder="Travellers"></div>
+                                            </div>
+                                            <div class="col-12 col-xl-2 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-start align-items-xl-end">
+                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Submit</button></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-2">
+                                    <p>Content for tab 2.</p>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-3">
+                                    <p>Content for tab 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow filter">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex align-items-center align-self-center"><i class="fa fa-filter mr-1"></i><a class="text-dark" href="#">Filter</a></div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                            <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">No.of Stops</button>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                            <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Price</button>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                            <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Airlines</button>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                            <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle border border-dark" data-toggle="dropdown" aria-expanded="false" type="button">More Filters</button>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-1 p-4">
+                <div class="card shadow border-0 rounded-0">
+                    <div class="card-body py-1">
+                        <div class="row">
+                            <div class="col-md-1 d-flex align-content-center justify-content-xl-center align-items-xl-center">
+                                <h6 class="text-center text-dark">ALL AIRLINES</h6>
+                            </div>
+                            <div class="col-md-11 col-lg-11 col-xl-11">
+                                <div id="slider" class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                        <div class="swiper-slide col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                            <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img class="img-fluid" src="assets/img/SG.png" loading="lazy" width="30"><span><i class="fa fa-rupee"></i>40,000</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+                                    <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div id="slider1" class="swiper-container airlines-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="card multi-city-selection my-2 border">
+                                            <div class="card-body p-2">
+                                                <div class="d-flex justify-content-between align-items-center my-2">
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <h6 class="mr-2">New Delhi</h6><i class="fa fa-long-arrow-right text-black-50"></i>
+                                                        <h6 class="ml-2">Mumbai</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <p>Tue 16,Jan 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center sort-by">
+                                                    <p>Sort By :&nbsp;</p>
+                                                    <ul class="list-group list-group-horizontal text-dark font-weight-bold">
+                                                        <li class="list-group-item border-right"><span>AIRLINES</span></li>
+                                                        <li class="list-group-item border-right"><span>DEPARTURE</span></li>
+                                                        <li class="list-group-item"><span>PRICE</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="card multi-city-selection my-2 border">
+                                            <div class="card-body p-2">
+                                                <div class="d-flex justify-content-between align-items-center my-2">
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <h6 class="mr-2">New Delhi</h6><i class="fa fa-long-arrow-right text-black-50"></i>
+                                                        <h6 class="ml-2">Mumbai</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <p>Tue 16,Jan 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center sort-by">
+                                                    <p>Sort By :&nbsp;</p>
+                                                    <ul class="list-group list-group-horizontal text-dark font-weight-bold">
+                                                        <li class="list-group-item border-right"><span>AIRLINES</span></li>
+                                                        <li class="list-group-item border-right"><span>DEPARTURE</span></li>
+                                                        <li class="list-group-item"><span>PRICE</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="card multi-city-selection my-2 border">
+                                            <div class="card-body p-2">
+                                                <div class="d-flex justify-content-between align-items-center my-2">
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <h6 class="mr-2">New Delhi</h6><i class="fa fa-long-arrow-right text-black-50"></i>
+                                                        <h6 class="ml-2">Mumbai</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <p>Tue 16,Jan 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center sort-by">
+                                                    <p>Sort By :&nbsp;</p>
+                                                    <ul class="list-group list-group-horizontal text-dark font-weight-bold">
+                                                        <li class="list-group-item border-right"><span>AIRLINES</span></li>
+                                                        <li class="list-group-item border-right"><span>DEPARTURE</span></li>
+                                                        <li class="list-group-item"><span>PRICE</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="card multi-city-selection my-2 border">
+                                            <div class="card-body p-2">
+                                                <div class="d-flex justify-content-between align-items-center my-2">
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <h6 class="mr-2">New Delhi</h6><i class="fa fa-long-arrow-right text-black-50"></i>
+                                                        <h6 class="ml-2">Mumbai</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <p>Tue 16,Jan 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center sort-by">
+                                                    <p>Sort By :&nbsp;</p>
+                                                    <ul class="list-group list-group-horizontal text-dark font-weight-bold">
+                                                        <li class="list-group-item border-right"><span>AIRLINES</span></li>
+                                                        <li class="list-group-item border-right"><span>DEPARTURE</span></li>
+                                                        <li class="list-group-item"><span>PRICE</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="card multi-city-selection my-2 border">
+                                            <div class="card-body p-2">
+                                                <div class="d-flex justify-content-between align-items-center my-2">
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <h6 class="mr-2">New Delhi</h6><i class="fa fa-long-arrow-right text-black-50"></i>
+                                                        <h6 class="ml-2">Mumbai</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <p>Tue 16,Jan 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center sort-by">
+                                                    <p>Sort By :&nbsp;</p>
+                                                    <ul class="list-group list-group-horizontal text-dark font-weight-bold">
+                                                        <li class="list-group-item border-right"><span>AIRLINES</span></li>
+                                                        <li class="list-group-item border-right"><span>DEPARTURE</span></li>
+                                                        <li class="list-group-item"><span>PRICE</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="card multi-city-selection my-2 border">
+                                            <div class="card-body p-2">
+                                                <div class="d-flex justify-content-between align-items-center my-2">
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <h6 class="mr-2">New Delhi</h6><i class="fa fa-long-arrow-right text-black-50"></i>
+                                                        <h6 class="ml-2">Mumbai</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row align-items-xl-center">
+                                                        <p>Tue 16,Jan 2018</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center sort-by">
+                                                    <p>Sort By :&nbsp;</p>
+                                                    <ul class="list-group list-group-horizontal text-dark font-weight-bold">
+                                                        <li class="list-group-item border-right"><span>AIRLINES</span></li>
+                                                        <li class="list-group-item border-right"><span>DEPARTURE</span></li>
+                                                        <li class="list-group-item"><span>PRICE</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-flex flex-row flight-details small rounded-0 my-2 border px-1">
+                                            <div class="form-check custom-control custom-radio mt-2 pointer"><input class="form-check-input custom-control-input" type="radio" id="formCheck-1"><label class="form-check-label custom-control-label pointer" for="formCheck-1"></label></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
+                                                            <div class="col-sm-2 col-md-12 col-lg-2 col-xl-2 d-flex d-md-flex justify-content-center justify-content-md-center">
+                                                                <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/SG.png" width="30"><sub class="mt-3 mb-1">6E755</sub></div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <p></p>
+                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                                <div class="text-center">
+                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                                                    <p></p>
+                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                                <div>
+                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-8 col-xl-4 d-flex justify-content-between align-items-center align-items-xl-start">
+                                                        <div>
+                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                                        <div><sub>Seat (s</sub>
+                                                            <h6 class="text-dark">15</h6>
+                                                        </div>
+                                                        <div><sub>Class</sub>
+                                                            <h6 class="text-dark">W15</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-4 col-xl-2 d-flex flex-column justify-content-around justify-content-xl-start">
+                                                        <p class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="d-xl-flex align-items-xl-center offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <ul class="list-group list-group-horizontal mt-2 seat">
+                                                        <li class="list-group-item"><span>A5</span></li>
+                                                        <li class="list-group-item"><span>B5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                        <li class="list-group-item"><span>C5</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+                        <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div id="slider1" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-xl-6 d-flex flex-row align-items-xl-start border-dotted border-left-0 border-top-0 border-bottom-0 py-3">
+                                            <div class="row">
+                                                <div class="col-xl-2"><img src="assets/img/SG.png" width="30"></div>
+                                                <div class="col-xl-3">
+                                                    <p class="text-dark">Oman Air</p>
+                                                    <p class="text-dark">6E 775</p>
+                                                </div>
+                                                <div class="col-xl-7">
+                                                    <div class="d-flex flex-row justify-content-between align-content-stretch align-items-xl-center">
+                                                        <p class="normal-text">DEL</p>
+                                                        <h6 class="font-weight-bold">19:30</h6><i class="fa fa-long-arrow-right mx-1"></i>
+                                                        <p class="normal-text">DXB</p>
+                                                        <h6 class="font-weight-bold">19:30</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><sub class="py-1">28hrs 35min</sub><i class="fa fa-circle small p-1"></i><sub class="p-1">1 stop</sub></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 d-flex flex-row align-items-xl-start py-3">
+                                            <div class="row">
+                                                <div class="col-xl-2"><img src="assets/img/SG.png" width="30"></div>
+                                                <div class="col-xl-3">
+                                                    <p class="text-dark">Oman Air</p>
+                                                    <p class="text-dark">6E 775</p>
+                                                </div>
+                                                <div class="col-xl-7">
+                                                    <div class="d-flex flex-row justify-content-between align-content-stretch align-items-xl-center">
+                                                        <p class="normal-text">DEL</p>
+                                                        <h6 class="font-weight-bold">19:30</h6><i class="fa fa-long-arrow-right mx-1"></i>
+                                                        <p class="normal-text">DXB</p>
+                                                        <h6 class="font-weight-bold">19:30</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><sub class="py-1">28hrs 35min</sub><i class="fa fa-circle small p-1"></i><sub class="p-1">1 stop</sub></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-xl-6 d-flex flex-row align-items-xl-start border-dotted border-left-0 border-top-0 border-bottom-0 py-3">
+                                            <div class="row">
+                                                <div class="col-xl-2"><img src="assets/img/SG.png" width="30"></div>
+                                                <div class="col-xl-3">
+                                                    <p class="text-dark">Oman Air</p>
+                                                    <p class="text-dark">6E 775</p>
+                                                </div>
+                                                <div class="col-xl-7">
+                                                    <div class="d-flex flex-row justify-content-between align-content-stretch align-items-xl-center">
+                                                        <p class="normal-text">DEL</p>
+                                                        <h6 class="font-weight-bold">19:30</h6><i class="fa fa-long-arrow-right mx-1"></i>
+                                                        <p class="normal-text">DXB</p>
+                                                        <h6 class="font-weight-bold">19:30</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><sub class="py-1">28hrs 35min</sub><i class="fa fa-circle small p-1"></i><sub class="p-1">1 stop</sub></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 d-flex flex-row align-items-xl-start py-3">
+                                            <div class="row">
+                                                <div class="col-xl-2"><img src="assets/img/SG.png" width="30"></div>
+                                                <div class="col-xl-3">
+                                                    <p class="text-dark">Oman Air</p>
+                                                    <p class="text-dark">6E 775</p>
+                                                </div>
+                                                <div class="col-xl-7">
+                                                    <div class="d-flex flex-row justify-content-between align-content-stretch align-items-xl-center">
+                                                        <p class="normal-text">DEL</p>
+                                                        <h6 class="font-weight-bold">19:30</h6><i class="fa fa-long-arrow-right mx-1"></i>
+                                                        <p class="normal-text">DXB</p>
+                                                        <h6 class="font-weight-bold">19:30</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><sub class="py-1">28hrs 35min</sub><i class="fa fa-circle small p-1"></i><sub class="p-1">1 stop</sub></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-xl-6 d-flex flex-row align-items-xl-start border-dotted border-left-0 border-top-0 border-bottom-0 py-3">
+                                            <div class="row">
+                                                <div class="col-xl-2"><img src="assets/img/SG.png" width="30"></div>
+                                                <div class="col-xl-3">
+                                                    <p class="text-dark">Oman Air</p>
+                                                    <p class="text-dark">6E 775</p>
+                                                </div>
+                                                <div class="col-xl-7">
+                                                    <div class="d-flex flex-row justify-content-between align-content-stretch align-items-xl-center">
+                                                        <p class="normal-text">DEL</p>
+                                                        <h6 class="font-weight-bold">19:30</h6><i class="fa fa-long-arrow-right mx-1"></i>
+                                                        <p class="normal-text">DXB</p>
+                                                        <h6 class="font-weight-bold">19:30</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><sub class="py-1">28hrs 35min</sub><i class="fa fa-circle small p-1"></i><sub class="p-1">1 stop</sub></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 d-flex flex-row align-items-xl-start py-3">
+                                            <div class="row">
+                                                <div class="col-xl-2"><img src="assets/img/SG.png" width="30"></div>
+                                                <div class="col-xl-3">
+                                                    <p class="text-dark">Oman Air</p>
+                                                    <p class="text-dark">6E 775</p>
+                                                </div>
+                                                <div class="col-xl-7">
+                                                    <div class="d-flex flex-row justify-content-between align-content-stretch align-items-xl-center">
+                                                        <p class="normal-text">DEL</p>
+                                                        <h6 class="font-weight-bold">19:30</h6><i class="fa fa-long-arrow-right mx-1"></i>
+                                                        <p class="normal-text">DXB</p>
+                                                        <h6 class="font-weight-bold">19:30</h6>
+                                                    </div>
+                                                    <div class="d-flex d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><sub class="py-1">28hrs 35min</sub><i class="fa fa-circle small p-1"></i><sub class="p-1">1 stop</sub></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+                            <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 d-flex d-xl-flex flex-row align-items-xl-start py-3 px-2">
+                        <p class="text-dark mr-2">REFUNDABLE</p>
+                        <div class="text-right"><span class="d-block offer-price offer-price-sm"><i class="fa fa-rupee mr-1"></i>25,000</span><span class="small-text text-dark">Flight Details</span></div>
+                    </div>
+                    <div class="col-xl-2 p-3"><button class="btn btn-primary btn-block" type="button">Select</button></div>
+                </div>
+            </div>
+        </div>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="assets/js/Swiper-Slider.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

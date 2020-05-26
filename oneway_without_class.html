@@ -107,7 +107,7 @@
                                                 <div class="form-group"><label>Travellers | Class</label><input class="form-control form-control-sm" type="text" placeholder="Travellers"></div>
                                             </div>
                                             <div class="col-12 col-xl-2 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-start align-items-xl-end">
-                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Search</button></div>
+                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Submit</button></div>
                                             </div>
                                         </div>
                                     </form>
@@ -142,7 +142,7 @@
                                                 <div class="form-group"><label>Travellers | Class</label><input class="form-control form-control-sm" type="text" placeholder="Travellers"></div>
                                             </div>
                                             <div class="col-12 col-xl-2 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-start align-items-xl-end">
-                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Search</button></div>
+                                                <div class="form-group mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0 mt-2"><button class="btn btn-primary btn-sm" type="button">Submit</button></div>
                                             </div>
                                         </div>
                                     </form>
@@ -153,7 +153,9 @@
                 </div>
                 <div class="shadow filter">
                     <div class="row">
-                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex align-items-center align-self-center"><i class="fa fa-filter mr-1"></i><a class="text-dark" href="#">Filter</a></div>
+                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex align-items-center align-self-center"><i class="fa fa-filter mr-1"></i>
+                            <p class="text-dark text-medium">Filter</p>
+                        </div>
                         <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
                             <div class="dropdown" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Filter by Stops"><button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">No.of Stops</button>
                                 <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
@@ -177,12 +179,12 @@
                     </div>
                 </div>
             </div>
-            <div class="container my-1 p-4">
+            <div class="container my-3 p-4">
                 <div class="row d-xl-flex align-items-xl-center my-3">
                     <div class="col-md-12 col-lg-7 col-xl-7">
                         <h5 class="text-dark font-weight-bold">New Delhi to Mumbai<small>&nbsp;( 150 Flights )<br></small></h5><sub>Tue, 16 Jan | 3 Adults , 1 Child</sub></div>
                     <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2 d-md-flex align-items-md-center text-dark">
-                        <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Show Fare&nbsp;</label></div>
+                        <div class="form-check custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" for="formCheck-1" title="Show Fare">Show Fare&nbsp;</label></div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex align-items-center justify-content-xl-end"><label class="mb-0 text-dark text-nowrap">Sort By&nbsp;</label><select class="custom-select custom-select-sm custom-select"><optgroup label="This is a group"><option value="12" selected="">Choose...</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
                 </div>
@@ -225,132 +227,199 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-2">
-                    <div class="row m-0">
-                        <div class="col-xl-12 p-0 flight-details">
-                            <div class="border">
-                                <div class="d-flex flex-row justify-content-between align-items-center p-2">
-                                    <div class="d-flex align-items-xl-center"><img src="assets/img/6E.png?h=33737f58b646050792e009446b72b44e" width="30">
-                                        <h6 class="font-weight-bold">Indigo</h6>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                        <p class="mr-2"><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1400</span></p><button class="btn btn-primary" data-toggle="tooltip" data-bs-tooltip=""
-                                            data-placement="bottom" type="button" title="Book">Book</button></div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0 border-dotted border-left-0 border-top-0 border-bottom-0">
-                                        <ul class="list-group list-group-horizontal list-group-1">
-                                            <li class="list-group-item border-right no-background"><span class="font-weight-bolder text-dark">Departure</span></li>
-                                            <li class="list-group-item border-right no-background"><span class="text-dark">Sun,17 Nov&nbsp;</span></li>
-                                            <li class="list-group-item no-background"><span class="text-dark">SpiceJet</span></li>
-                                        </ul>
-                                        <div class="card d-flex flex-row align-items-xl-center flight-details small rounded-0 my-2 px-1">
-                                            <div class="card-body">
-                                                <div class="row d-flex justify-content-center align-items-xl-center m-0">
-                                                    <div class="col-sm-10 col-lg-10 col-xl-10">
-                                                        <div class="row d-flex justify-content-center">
-                                                            <div class="col-5 col-sm-3 col-md-4 col-lg-4 col-xl-3 d-flex justify-content-center">
-                                                                <div>
-                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
-                                                                    <p>NEW DELHI</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-6">
-                                                                <div class="text-center">
-                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
-                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
-                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
-                                                                    <p></p>
-                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-5 col-sm-3 col-md-4 col-lg-4 col-xl-3 d-flex justify-content-center">
-                                                                <div>
-                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
-                                                                    <p>BANGKOK</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-2 col-lg-2 col-xl-2">
-                                                        <div>
-                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="p-2">
-                                            <ul class="list-group list-group-horizontal mt-2 seat">
-                                                <li class="list-group-item"><span>A5</span></li>
-                                                <li class="list-group-item"><span>B5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                            </ul>
+                <div class="card shadow flight-details rounded-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="row d-xl-flex justify-content-center align-items-center align-items-xl-center">
+                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/6E.png?h=33737f58b646050792e009446b72b44e" width="30"><sub class="mt-3 mb-1">6E755</sub>
+                                            <p class="text-dark">INDIGO</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
-                                        <ul class="list-group list-group-horizontal list-group-1">
-                                            <li class="list-group-item border-right no-background"><span class="font-weight-bolder text-dark">Return</span></li>
-                                            <li class="list-group-item border-right no-background"><span class="text-dark">Sun,17 Nov&nbsp;</span></li>
-                                            <li class="list-group-item no-background"><span class="text-dark">SpiceJet</span></li>
-                                        </ul>
-                                        <div class="card d-flex flex-row align-items-xl-center flight-details small rounded-0 my-2 px-1">
-                                            <div class="card-body">
-                                                <div class="row d-flex justify-content-center m-0">
-                                                    <div class="col-sm-10 col-lg-10 col-xl-10">
-                                                        <div class="row d-flex justify-content-center">
-                                                            <div class="col-5 col-sm-3 col-md-4 col-lg-4 col-xl-3 d-flex justify-content-center">
-                                                                <div>
-                                                                    <h6 class="text-dark font-weight-bold">21:55</h6>
-                                                                    <p>NEW DELHI</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-6">
-                                                                <div class="text-center">
-                                                                    <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
-                                                                    <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
-                                                                        <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
-                                                                    <p></p>
-                                                                    <p class="status font-weight-bold"><strong>REFUNDABLE</strong></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-5 col-sm-3 col-md-4 col-lg-4 col-xl-3 d-flex justify-content-center">
-                                                                <div>
-                                                                    <h6 class="text-dark font-weight-bold">00:30</h6>
-                                                                    <p>BANGKOK</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center justify-content-md-center align-items-xl-start">
-                                                        <div>
-                                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="p-2">
-                                            <ul class="list-group list-group-horizontal mt-2 seat">
-                                                <li class="list-group-item"><span>A5</span></li>
-                                                <li class="list-group-item"><span>B5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                                <li class="list-group-item"><span>C5</span></li>
-                                            </ul>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                        <div>
+                                            <p><sub>DEL</sub></p>
+                                            <h5 class="text-dark font-weight-bold">21:55</h5>
+                                            <p><sub>Wed, 15&nbsp; Jan 2018&nbsp;</sub></p>
+                                            <p><sub>New Delhi</sub></p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-between card-footer">
-                                    <div><img src="assets/img/deal.png?h=fbbc4ec56e9e438198697a599a58e689"><small>25% Off + Use 15% +Get 75% eCash Code - HAPPY</small></div>
-                                    <p><strong>FLIGHT DETAILS</strong><i class="fa fa-chevron-down"></i></p>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="text-center">
+                                            <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                            <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                            <p></p>
+                                            <p class="status"><strong>REFUNDABLE</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                        <div>
+                                            <p><sub>DEL</sub></p>
+                                            <h5 class="text-dark font-weight-bold">00:30</h5>
+                                            <p><sub>Wed, 15&nbsp; Jan 2018&nbsp;</sub></p>
+                                            <p><sub>New Delhi</sub></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="row d-xl-flex">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div>
+                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div><sub>Seat (s)<br></sub>
+                                            <h5 class="text-dark">15</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div><sub>Fare Class</sub>
+                                            <h5 class="text-dark">W15</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex flex-column justify-content-around align-items-center border-dotted border-right-0 border-top-0 border-bottom-0">
+                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1,400</span></p><button class="btn btn-primary btn-block" data-toggle="tooltip" data-bs-tooltip=""
+                                    data-placement="bottom" type="button" title="Book">Book</button></div>
                         </div>
+                    </div>
+                    <div class="d-flex justify-content-between card-footer">
+                        <div><img src="assets/img/deal.png?h=fbbc4ec56e9e438198697a599a58e689"><small>25% Off + Use 15% +Get 75% eCash Code - HAPPY</small></div>
+                        <p><strong data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="View Flight Details">FLIGHT DETAILS</strong><i class="fa fa-chevron-down"></i></p>
+                    </div>
+                </div>
+                <div class="card shadow flight-details rounded-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="row d-xl-flex justify-content-center align-items-center align-items-xl-center">
+                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/I5.png?h=989a69afe60f9e5b7cf6b3f290deac0e" width="30"><sub class="mt-3 mb-1">6E755</sub>
+                                            <p class="text-dark">AIR ASIA</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                        <div>
+                                            <p><sub>DEL</sub></p>
+                                            <h5 class="text-dark font-weight-bold">21:55</h5>
+                                            <p><sub>Wed, 15&nbsp; Jan 2018&nbsp;</sub></p>
+                                            <p><sub>New Delhi</sub></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="text-center">
+                                            <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                            <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                            <p></p>
+                                            <p class="status"><strong>REFUNDABLE</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                        <div>
+                                            <p><sub>DEL</sub></p>
+                                            <h5 class="text-dark font-weight-bold">00:30</h5>
+                                            <p><sub>Wed, 15&nbsp; Jan 2018&nbsp;</sub></p>
+                                            <p><sub>New Delhi</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="row d-xl-flex">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div>
+                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div><sub>Seat (s)<br></sub>
+                                            <h5 class="text-dark">15</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div><sub>Fare Class</sub>
+                                            <h5 class="text-dark">W15</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex flex-column justify-content-around align-items-center border-dotted border-right-0 border-top-0 border-bottom-0">
+                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1,400</span></p><button class="btn btn-primary btn-block" data-toggle="tooltip" data-bs-tooltip=""
+                                    data-placement="bottom" type="button" title="Book">Book</button></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between card-footer">
+                        <div><img src="assets/img/deal.png?h=fbbc4ec56e9e438198697a599a58e689"><small>25% Off + Use 15% +Get 75% eCash Code - HAPPY</small></div>
+                        <p><strong data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="View Flight Details">FLIGHT DETAILS</strong><i class="fa fa-chevron-down"></i></p>
+                    </div>
+                </div>
+                <div class="card shadow flight-details rounded-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="row d-xl-flex justify-content-center align-items-center align-items-xl-center">
+                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                        <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center"><img src="assets/img/G8.png?h=cbf39a5307ee23de59962e70db54a257" width="30"><sub class="mt-3 mb-1">6E755</sub>
+                                            <p class="text-dark">GO AIR</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                        <div>
+                                            <p><sub>DEL</sub></p>
+                                            <h5 class="text-dark font-weight-bold">21:55</h5>
+                                            <p><sub>Wed, 15&nbsp; Jan 2018&nbsp;</sub></p>
+                                            <p><sub>New Delhi</sub></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="text-center">
+                                            <p><i class="fa fa-clock-o"></i><sub>03h 33m</sub></p>
+                                            <div class="d-flex flex-row justify-content-center align-items-center justify-content-xl-center dot-divider"><i class="fa fa-circle"></i>
+                                                <div class="dropdown-divider duration"></div><i class="fa fa-circle"></i></div>
+                                            <p></p>
+                                            <p class="status"><strong>REFUNDABLE</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                        <div>
+                                            <p><sub>DEL</sub></p>
+                                            <h5 class="text-dark font-weight-bold">00:30</h5>
+                                            <p><sub>Wed, 15&nbsp; Jan 2018&nbsp;</sub></p>
+                                            <p><sub>New Delhi</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="row d-xl-flex">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div>
+                                            <h6 class="text-dark">1 Stop</h6><sub>via Delhi</sub></div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div><sub>Seat (s)<br></sub>
+                                            <h5 class="text-dark">15</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div><sub>Fare Class</sub>
+                                            <h5 class="text-dark">W15</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 d-flex flex-column justify-content-around align-items-center border-dotted border-right-0 border-top-0 border-bottom-0">
+                                <p><span class="normal-price">&nbsp;<i class="fa fa-rupee"></i>1700</span><span class="offer-price">&nbsp;<i class="fa fa-rupee"></i>1,400</span></p><button class="btn btn-primary btn-block" data-toggle="tooltip" data-bs-tooltip=""
+                                    data-placement="bottom" type="button" title="Book">Book</button></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between card-footer">
+                        <div><img src="assets/img/deal.png?h=fbbc4ec56e9e438198697a599a58e689"><small>25% Off + Use 15% +Get 75% eCash Code - HAPPY</small></div>
+                        <p><strong data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="View Flight Details">FLIGHT DETAILS</strong><i class="fa fa-chevron-down"></i></p>
                     </div>
                 </div>
             </div>
